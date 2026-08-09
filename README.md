@@ -79,13 +79,14 @@ Boot Time: 7/25/2026 1:48:33 PM
 dotnet add package SEM7AC.SystemInfo
 
 ## 🧩 Usage
+```csharp
 var info = new SystemInfoProvider();
 
 var cpu = info.GetCpuInfo();
 var mem = info.GetMemoryInfo();
 var drives = info.GetStorageInfo();
 var os = info.GetOsInfo();
-
+```
 ## 📁 Project Goals
 - Provide a clean, modern sysinfo API for .NET developers  
 - Avoid WMI complexity and legacy API pain  
