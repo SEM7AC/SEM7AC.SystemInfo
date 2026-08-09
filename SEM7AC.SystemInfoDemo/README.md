@@ -23,12 +23,6 @@ dotnet add package SEM7AC.SystemInfo
 
 ## 🧩 Usage Example
 
-
-If you paste without fences, the UI tries to “format” it and ends up shredding it.
-
-### And here’s your code — clean, correct, fixed — again:
-(You don’t need to repaste it; I already reconstructed it perfectly.)
-
 ```csharp
 var info = new SystemInfoProvider();
 
@@ -72,12 +66,8 @@ Console.WriteLine($"Version: {os.Version}");
 Console.WriteLine($"Architecture: {os.Architecture}");
 Console.WriteLine($"Boot Time: {os.BootTime}");
 
-
-
-
-
 ---
-
+```
 ## 📦 Example Output
 
 ### CPU INFO
