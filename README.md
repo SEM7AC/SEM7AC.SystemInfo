@@ -1,25 +1,48 @@
-SEM7AC.SystemInfo
-A fast, lightweight C# class library for gathering detailed system information on Windows machines. 
-Built for developers who want clean, reliable access to CPU, memory, storage, and OS data without 
-digging through WMI hell or platform‑specific APIs.
+# SEM7AC.SystemInfo
 
-🚀 Features
-CPU Details  
-Name, logical processors, physical cores, clock speed (MHz)
+A fast, lightweight C# class library for gathering detailed
+system information on Windows machines. Built for developers
+who want clean, reliable access to CPU, memory, storage, and
+OS data without dealing with WMI complexity.
 
-Memory Stats  
-Total, available, used, load percentage
+---
 
-Storage Information  
-Drive totals, free/used space, format, type
+## 🚀 Features
 
-Operating System Info  
-Name, version, architecture, boot time
+### CPU Details
+- Name  
+- Logical processors  
+- Physical cores (approx)  
+- Clock speed (MHz)
 
-Zero external dependencies  
-Pure .NET. Fast. Clean. Minimal.
+### Memory Stats
+- Total  
+- Available  
+- Used  
+- Load %
 
-📦 Example Output
+### Storage Info
+- Drive totals  
+- Free / used space  
+- Format  
+- Drive type
+
+### OS Info
+- Name  
+- Version  
+- Architecture  
+- Boot time
+
+### Zero Dependencies
+- Pure .NET  
+- Fast  
+- Minimal
+
+---
+
+## 📦 Example Output
+
+
 Code
 === CPU INFO ===
 Name: Intel(R) Core(TM) Ultra 7 265
