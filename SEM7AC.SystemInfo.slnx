@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SEM7AC.SystemInfo/SEM7AC.SystemInfo.csproj" />
+  <Project Path="SEM7AC.SystemInfoDemo/SEM7AC.SystemInfoDemo.csproj" />
+</Solution>
