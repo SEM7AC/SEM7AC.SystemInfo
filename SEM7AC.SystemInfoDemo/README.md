@@ -25,20 +25,25 @@ dotnet add package SEM7AC.SystemInfo
 
 var info = new SystemInfoProvider();
 
+// CPU
 var cpu = info.GetCpuInfo();
 Console.WriteLine("=== CPU INFO ===");
 Console.WriteLine($"Name: {cpu.Name}");
 Console.WriteLine($"Logical Processors: {cpu.LogicalProcessors}");
 Console.WriteLine($"Physical Cores: {cpu.PhysicalCores}");
 Console.WriteLine($"MHz: {cpu.MHz}");
+Console.WriteLine();
 
+// Memory
 var mem = info.GetMemoryInfo();
 Console.WriteLine("=== MEMORY INFO ===");
 Console.WriteLine($"Total: {mem.TotalGB} GB");
 Console.WriteLine($"Available: {mem.AvailableGB} GB");
 Console.WriteLine($"Used: {mem.UsedGB} GB");
 Console.WriteLine($"Load: {mem.LoadPercent}%");
+Console.WriteLine();
 
+// Storage
 var drives = info.GetStorageInfo();
 foreach (var d in drives)
 {
@@ -49,14 +54,17 @@ foreach (var d in drives)
     Console.WriteLine($"Used GB: {d.UsedGB}");
     Console.WriteLine($"Format: {d.Format}");
     Console.WriteLine($"Type: {d.Type}");
+    Console.WriteLine();
 }
 
+// OS
 var os = info.GetOsInfo();
 Console.WriteLine("=== OS INFO ===");
 Console.WriteLine($"Name: {os.Name}");
 Console.WriteLine($"Version: {os.Version}");
 Console.WriteLine($"Architecture: {os.Architecture}");
 Console.WriteLine($"Boot Time: {os.BootTime}");
+
 
 ---
 
