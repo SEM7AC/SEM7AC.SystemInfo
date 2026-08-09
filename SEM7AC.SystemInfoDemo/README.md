@@ -66,6 +66,7 @@ Console.WriteLine($"Architecture: {os.Architecture}");
 Console.WriteLine($"Boot Time: {os.BootTime}");
 
 
+
 ---
 
 ## 📦 Example Output
