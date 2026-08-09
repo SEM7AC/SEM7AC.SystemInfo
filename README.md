@@ -1,101 +1,82 @@
-# SEM7AC.SystemInfo
+# SEM7AC SystemInfo Repository
 
-A fast, lightweight C# class library for gathering detailed
-system information on Windows machines. Built for developers
-who want clean, reliable access to CPU, memory, storage, and
-OS data without dealing with WMI complexity.
+This repository contains the `SEM7AC.SystemInfo` library and its accompanying demo application. The goal of this repo is to provide a clean, modern, dependency‑free way to retrieve system information on Windows machines using .NET.
 
----
-
-## 🚀 Features
-
-### CPU Details
-- Name  
-- Logical processors  
-- Physical cores (approx)  
-- Clock speed (MHz)
-
-### Memory Stats
-- Total  
-- Available  
-- Used  
-- Load %
-
-### Storage Info
-- Drive totals  
-- Free / used space  
-- Format  
-- Drive type
-
-### OS Info
-- Name  
-- Version  
-- Architecture  
-- Boot time
-
-### Zero Dependencies
-- Pure .NET  
-- Fast  
-- Minimal
+The library is lightweight, fast, and designed for developers who want predictable, structured system data without dealing with WMI complexity or legacy APIs.
 
 ---
 
-## 📦 Example Output
+## 📦 Projects in This Repository
 
-### CPU INFO
-Name: Intel(R) Core(TM) Ultra 7 265  
-Logical Processors: 20  
-Physical Cores: 10  
-MHz: 2381  
+### **1. SEM7AC.SystemInfo (Library)**
+A standalone .NET library that exposes CPU, memory, storage, and OS information through a simple, modern API.
 
-### MEMORY INFO
-Total: 15.4 GB  
-Available: 5.29 GB  
-Used: 10.11 GB  
-Load: 65%  
+**Features:**
+- CPU info (name, cores, logical processors, MHz)
+- Memory info (total, available, used, load)
+- Storage info (drives, free/used space, format, type)
+- OS info (name, version, architecture, boot time)
+- No external dependencies  
+- Clean, structured models  
+- Fast and lightweight  
 
-### STORAGE INFO
-Drive Name: C:\  
-Total GB: 952.48  
-Free GB: 815.21  
-Used GB: 137.27  
-Format: NTFS  
-Type: Fixed  
+### **2. SEM7AC.SystemInfo.Demo (Console App)**
+A small console application demonstrating how to use the library.  
+Shows how to retrieve and print system information in a readable format.
 
-Drive Name: D:\  
-Total GB: 14.58  
-Free GB: 13.69  
-Used GB: 0.9  
-Format: FAT32  
-Type: Removable  
+---
 
-### OS INFO
-Name: Windows 11  
-Version: 10.0.26200.0  
-Architecture: 64-bit  
-Boot Time: 7/25/2026 1:48:33 PM  
+## 🚀 Getting Started
 
-## 🔧 Installation (NuGet)
+Clone the repository:
+
+git clone https://github.com/SEM7AC/SystemInfo.git
+
+Navigate into the repo:
+
+cd SystemInfo
+
+Build the solution:
+
+dotnet build
+
+Run the demo:
+
+dotnet run --project SEM7AC.SystemInfo.Demo
+
+---
+
+## 🔧 Installing the Library (NuGet)
+
 dotnet add package SEM7AC.SystemInfo
 
-## 🧩 Usage
-```csharp
+*(Package name placeholder until published.)*
+
+---
+
+## 🧩 Library Usage Example
+
 var info = new SystemInfoProvider();
 
 var cpu = info.GetCpuInfo();
 var mem = info.GetMemoryInfo();
 var drives = info.GetStorageInfo();
 var os = info.GetOsInfo();
-```
-## 📁 Project Goals
-- Provide a clean, modern sysinfo API for .NET developers  
-- Avoid WMI complexity and legacy API pain  
-- Offer predictable, structured output  
+
+---
+
+## 📁 Repository Goals
+
+- Provide a modern, developer‑friendly system info API  
+- Avoid WMI and legacy Windows APIs  
 - Keep the library small, fast, and dependency‑free  
-- Serve as a foundational component for future SEM7AC projects
+- Offer a clean demo for quick onboarding  
+- Serve as a foundation for future SEM7AC tooling  
+
+---
 
 ## 🧑‍💻 Author
-**SEM7AC (Christopher)**  
-Developer, engineer, builder of sharp, minimal, high‑performance .NET components.
 
-MIT — free to use, modify, and integrate.
+**SEM7AC (Christopher)**  
+Builder of sharp, minimal, high‑performance .NET components.
+
