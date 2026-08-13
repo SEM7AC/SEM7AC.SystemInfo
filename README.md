@@ -4,6 +4,15 @@ This repository contains the `SEM7AC.SystemInfo` library and its accompanying de
 
 The library is lightweight, fast, and designed for developers who want predictable, structured system data without dealing with WMI complexity or legacy APIs.
 
+[![NuGet Version](https://img.shields.io/nuget/v/SEM7AC.SystemInfo.svg?style=for-the-badge)](https://www.nuget.org/packages/SEM7AC.SystemInfo/)
+![NuGet Downloads](https://img.shields.io/nuget/dt/SEM7AC.SystemInfo.svg?style=for-the-badge)
+![GitHub Release](https://img.shields.io/github/v/release/SEM7AC/SEM7AC.SystemInfo?style=for-the-badge)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+
+
+
+
+
 ---
 
 ## 📦 Projects in This Repository
