@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -23,7 +22,14 @@
 		<RepositoryUrl>https://github.com/SEM7AC/SEM7AC.SystemInfo</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/SEM7AC/SEM7AC.SystemInfo</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<!-- REQUIRED FOR NUGET README -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
+	<!-- REQUIRED TO PACK README INTO THE NUPKG -->
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
