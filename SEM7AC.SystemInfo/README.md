@@ -80,12 +80,21 @@ dotnet add package SEM7AC.SystemInfo
 
 ## 🧩 Usage
 ```csharp
-var info = new SystemInfoProvider();
+using SEM7AC.U.SystemInfo;
 
-var cpu = info.GetCpuInfo();
-var mem = info.GetMemoryInfo();
-var drives = info.GetStorageInfo();
-var os = info.GetOsInfo();
+var result = SysInfo.Get();
+
+// CPU Info
+var cpu = result.Cpu;
+
+// Memory Info
+var memory = result.Memory;
+
+// Storage Info
+var storage = result.Storage;
+
+// OS Info
+var os = result.Os;
 ```
 ## 📁 Project Goals
 - Provide a clean, modern sysinfo API for .NET developers  
